@@ -42,7 +42,6 @@ class Gd2 extends \Magento\Framework\Image\Adapter\Gd2
         array $data = []
     ) {
         $this->settings = $helperSettings;
-
         parent::__construct($filesystem, $logger, $data);
     }
 

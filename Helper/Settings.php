@@ -88,6 +88,27 @@ class Settings extends AbstractHelper
         );
     }
 
+
+    /**
+     * This is used for the Gd2
+     *
+     * @return array
+     */
+    public function getImageFiletypes()
+    {
+        return [
+            'jpg',
+            'jpeg',
+            'png',
+            'gif',
+            'webp',
+            'bmp',
+            'xpm',
+            'xbm',
+            'wbmp'
+        ];
+    }
+
     /**
      * Get extra file types (allowed)
      *
@@ -129,6 +150,7 @@ class Settings extends AbstractHelper
             'mp4',
             'ogg',
             'webm',
+            'bmp'
         ];
 
         return array_merge($filetypes, $defaultFiletypes);
